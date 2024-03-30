@@ -31,7 +31,7 @@ const { Pool } = require('pg')
 require('dotenv').config()
 
 const pool = new Pool({
-  connectionString: "postgres://default:zK9Q1APaTcXR@ep-crimson-violet-a2u4oaif-pooler.eu-central-1.aws.neon.tech:5432/verceldb?sslmode=require",
+    connectionString: process.env.DATABASE_URL,
 })
 
 
